@@ -8,7 +8,12 @@
 </head>
 <body>
 <h1>Welcome to HomePage Register here, if you dont have a account</h1><br>
+  <p>{{ error }}</p>
   <form action="/perform_registration" method = 'post'>
+
+    <label for="email"> Email: </label>
+    <input type="email" id = "email_id" name = "emailaddress"> <br><br>
+    
     <label for="username">Username:</label>
     <input type="text" id="username" name="username"><br> <br>
     <label for="password">Password:</label>
@@ -18,7 +23,7 @@
     <input type="submit" value="Register">
   </form>
 
-  <p>Already a member? <span><a href="#">Login here</a></span></p>
+  <p>Already a member? <span><a href="login">Login here</a></span></p>
   
 </body>
 </html>
